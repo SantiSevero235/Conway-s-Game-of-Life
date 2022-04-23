@@ -4,11 +4,13 @@ using System.Threading;
 
 namespace Gameoflife
 {
+    // Esta clase se encarga de la logica del programa
     public static class Tablero
     {
         public static void Logica()
         {
-            bool[,] gameBoard = Inicializador.Inicio() /* contenido del tablero */;
+            //creacion del tablero inicial
+            bool[,] gameBoard = Inicializador.Inicio();
             int boardWidth = gameBoard.GetLength(0);
             int boardHeight = gameBoard.GetLength(1);
             bool[,] cloneboard = new bool[boardWidth, boardHeight];
