@@ -3,6 +3,8 @@ using System.IO;
 
 namespace Gameoflife
 {
+
+    // Esta clase tiene la responsabilidad de crear el tablero base, con el cual se crean los demas. Este se encuentra en board.txt
     public static class Inicializador
     {
         public static bool[,] Inicio()
